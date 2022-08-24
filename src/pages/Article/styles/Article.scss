@@ -1,0 +1,122 @@
+@import '../../../styles/variables';
+
+.page-article {
+  padding: 80px 0px;
+  h1 {
+    font-size: 3.6rem;
+    font-family: 'bold';
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    @include min-w-960 {
+      font-size: 4.5rem;
+    }
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    padding-bottom: 50%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 5;
+    }
+
+    &__title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1rem 2.4rem;
+      font-size: 1.6rem;
+      z-index: 6;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-family: 'medium';
+    }
+
+    &:hover {
+      .page-article__fade__image {
+        transform: scale(1.2);
+      }
+      .page-article__face {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: transform 0.2s;
+    background: center center no-repeat;
+    overflow: hidden;
+    &__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: -0.625rem;
+      background: center center no-repeat;
+      background-size: cover;
+      filter: blur(0.625rem);
+      transition: transform 0.3s;
+    }
+  }
+
+  &__face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: transform 0.2s;
+    background: center center no-repeat;
+    background-size: contain;
+  }
+
+  &__intro {
+    p {
+      margin: 40px 0px;
+      color: #fff;
+      font-size: 1.6rem;
+      font-family: 'bold';
+    }
+  }
+
+  &__body {
+    p {
+      margin: 40px 0px;
+      color: #fff;
+      font-size: 16px;
+      font-family: 'regular';
+    }
+  }
+
+  &__tags {
+    margin: 0px -8px;
+  }
+
+  &__tag {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    font-family: 'black';
+    color: #fff;
+    border-radius: 32px;
+    font-size: 1.4rem;
+    background-color: #ff57a2;
+    margin: 8px 8px;
+  }
+}

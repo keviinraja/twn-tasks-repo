@@ -1,0 +1,41 @@
+.component-header {
+  display: flex;
+  padding-top: 60px;
+
+  &__logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    img {
+      max-width: 150px;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    flex: 0 0 10%;
+    align-items: center;
+    font-family: 'medium';
+    text-decoration: inherit;
+    color: #fff;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1;
+    
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:nth-child(3) {
+      flex-direction: row-reverse;
+      padding-left: 0px;
+      padding-right: 20px;
+    }
+  }
+}

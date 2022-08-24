@@ -1,0 +1,57 @@
+.component-listRowDetails {
+  &__container {
+    padding: 10px 16px;
+    background-color: #fff;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__image {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 6px;
+  }
+
+  &__body {
+    padding-left: 16px;
+  }
+
+  &__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: normal;
+    margin-top: 6px;
+    color: #000;
+  }
+
+  &__link {
+    display: inline-block;
+    margin: 0 0 16px;
+    padding: 0.85em 1.7em;
+    transition: background-color 0.25s ease-out;
+    font-family: bold;
+    font-size: 1.2rem;
+    line-height: 1;
+    text-align: center;
+    background-color: #14cc76;
+    color: #3a3d57;
+    border: none;
+    text-decoration: none;
+    border-bottom: 0.25rem solid #37945c;
+    text-transform: uppercase;
+    margin: 20px 0px;
+
+    &:hover {
+      background-color: #40e592;
+    }
+  }
+}

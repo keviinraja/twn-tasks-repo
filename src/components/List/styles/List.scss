@@ -1,0 +1,10 @@
+.component-list {
+  display: block;
+  overflow: auto;
+  width: 100%;
+  table {
+    table-layout: fixed;
+    margin-top: 35px;
+    min-width: 100%;
+  }
+}

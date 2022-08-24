@@ -1,0 +1,21 @@
+.component-listBody {
+  &__row {
+    &:nth-child(even) {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    &.open {
+      background: #fff;
+      .component-listBody__col {
+        color: #000;
+      }
+    }
+  }
+
+  &__col {
+    padding: 1rem 1.6rem;
+    border-bottom: #fff 0.0625rem solid;
+    color: #fff;
+    font-family: 'regular';
+  }
+}

@@ -1,0 +1,46 @@
+.component-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    margin: 10px 8px;
+    font-family: 'bold';
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid #fff;
+    }
+  }
+
+  .active {
+    background-color: #fff;
+    color: #000;
+  }
+
+  &__arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px 8px;
+    border: none;
+    position: relative;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid #fff;
+    }
+  }
+}

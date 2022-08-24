@@ -1,0 +1,16 @@
+.app {
+  height: 100vh;
+  background-color: #3a3d57;
+  background-image: url('../assets/images/bg-deco-left.svg'),
+    url('../assets/images/bg-deco-right.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
+  background-size: 150px, 250px;
+  overflow: auto;
+
+  &__content {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0px 24px;
+  }
+}
